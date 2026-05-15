@@ -267,14 +267,80 @@ textarea.form-input{resize:vertical;min-height:80px}
 /* === RESPONSIVE === */
 @media(max-width:768px){
   .bottom-nav{display:block}
-  .main-content{padding:14px;padding-bottom:90px}
+  .main-content{padding:14px;padding-bottom:100px}
   .desktop-nav{display:none!important}
   .header-name{display:none}
   .stat-chips{gap:6px}
   .stat-chip{min-width:calc(50% - 4px);padding:9px 12px}
   .hero-amount{font-size:1.8rem}
+  .hero-card{padding:22px 18px;border-radius:var(--radius-lg)}
   .fab{bottom:78px;right:18px}
+  .page-title{font-size:1.25rem}
+  .page-subtitle{font-size:0.8rem;margin-bottom:16px}
+  .card{padding:16px;border-radius:var(--radius-md)}
+  .debt-card{padding:12px 14px;gap:10px}
+  .debt-avatar{width:38px;height:38px;font-size:0.8rem}
+  .debt-name{font-size:0.82rem}
+  .debt-amount{font-size:0.88rem}
+  .detail-header{padding:22px 18px;border-radius:var(--radius-lg)}
+  .detail-amount{font-size:1.6rem}
+  .detail-section{padding:14px;border-radius:var(--radius-md)}
+  .detail-row{padding:8px 0}
+  .detail-row-label{font-size:0.72rem}
+  .detail-row-value{font-size:0.8rem}
+  .action-buttons{flex-direction:column;gap:8px}
+  .action-buttons .btn{width:100%}
+  .alert-card{padding:12px 14px;gap:10px;border-radius:var(--radius-md)}
+  .alert-card-title{font-size:0.8rem}
+  .alert-card-sub{font-size:0.68rem}
+  .tabs{border-radius:var(--radius-sm);padding:3px}
+  .tab{padding:8px 8px;font-size:0.7rem}
+  .form-input{padding:11px 14px;font-size:0.85rem}
+  .form-label{font-size:0.75rem}
+  .btn-lg{padding:13px 22px;font-size:0.9rem}
+  .login-card{padding:32px 22px;margin:12px;max-width:none}
+  .login-logo{width:56px;height:56px;border-radius:14px}
+  .login-title{font-size:1.3rem}
+  .login-subtitle{font-size:0.8rem;margin-bottom:20px}
+  .otp-inputs{gap:8px}
+  .otp-input{width:50px;height:58px;font-size:1.3rem}
+  .phone-input-wrapper{border-radius:var(--radius-md)}
+  .phone-prefix{padding:11px 10px 11px 14px;font-size:0.85rem;min-width:55px}
+  .phone-input{padding:11px 12px;font-size:0.85rem}
+  .modal-content{padding:22px 18px;border-radius:var(--radius-lg) var(--radius-lg) 0 0}
+  .empty-state{padding:36px 18px}
+  .empty-icon{font-size:2.5rem;margin-bottom:10px}
+  .empty-title{font-size:0.95rem}
+  .empty-text{font-size:0.78rem}
+  .section-title{font-size:0.92rem}
+  .app-header{padding:0 16px;height:54px}
+  .app-logo{font-size:1.05rem;gap:8px}
+  .app-logo-icon{width:30px;height:30px;border-radius:8px;font-size:0.85rem}
+  .header-user{padding:4px 10px 4px 4px}
+  .header-avatar{width:28px;height:28px;font-size:0.7rem}
+  .nav-item{font-size:0.58rem;padding:3px 10px}
+  .nav-icon{font-size:1.1rem;width:32px;height:26px}
 }
+
+/* === EXTRA SMALL SCREENS (320px) === */
+@media(max-width:375px){
+  .main-content{padding:10px;padding-bottom:100px}
+  .hero-card{padding:18px 14px}
+  .hero-amount{font-size:1.5rem}
+  .hero-greeting{font-size:0.8rem}
+  .stat-chip{min-width:100%;padding:8px 10px}
+  .stat-chip-value{font-size:0.85rem}
+  .stat-chip-label{font-size:0.6rem}
+  .debt-card{padding:10px 12px;gap:8px}
+  .debt-avatar{width:34px;height:34px;font-size:0.75rem}
+  .login-card{padding:28px 18px;margin:8px}
+  .otp-input{width:44px;height:52px;font-size:1.1rem}
+  .otp-inputs{gap:6px}
+  .tab{padding:7px 6px;font-size:0.65rem}
+  .app-header{padding:0 12px;height:50px}
+  .app-logo{font-size:0.95rem}
+}
+
 @media(min-width:769px){
   .main-content{padding:28px 24px}
   .fab{bottom:32px;right:32px}
@@ -285,3 +351,8 @@ textarea.form-input{resize:vertical;min-height:80px}
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:#D1D5DB;border-radius:3px}
 .currency{font-size:0.7em;font-weight:500;opacity:0.8}
+
+/* === LOADING SKELETON === */
+.skeleton{background:linear-gradient(90deg,#f0f0f0 25%,#e0e0e0 50%,#f0f0f0 75%);background-size:200% 100%;animation:shimmer 1.5s infinite}
+@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
